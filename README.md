@@ -1,6 +1,5 @@
-```
 
-# Portfólio Olá, Bem vindo ao meu projeto de portfólio.
+# Olá, Bem vindo ao meu projeto de portfólio.
 
 
 
@@ -17,5 +16,3 @@
 ### Dionisio Diniz Ferreira
 
 ### Linkedin: https://www.linkedin.com/in/dinizferreira/
-
-```
