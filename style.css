@@ -135,6 +135,7 @@ body { /*configuração inicial do corpo da pagina*/
   }
   .cabecalho__menu{
     justify-content: center;
+    gap:5%;
   }
  
   .apresentacao{
