@@ -1,0 +1,147 @@
+ @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+ :root{
+  --cor-primaria:#E5D9B6;
+  --cor-secundaria:#5F8D4E;
+  --cor-terciaria:#285430;
+  --cor-quarta:#A4BE7B;
+
+  --fonte-primaria:'Krona One', sans-serif;
+  --fonte-secundaria:'Montserrat', sans-serif;
+ }
+
+*{/*reset do css*/
+  margin:0;
+  padding:0;
+}
+
+body { /*configuração inicial do corpo da pagina*/
+  /* height: 100vh; modelo de visualização baseada na view da pagina */
+  box-sizing: border-box;
+  background:var(--cor-primaria);/*cor do fundo da página*/
+  color:var(--cor-secundaria);/*cor dos elementos da pagina*/
+  }
+
+  .cabecalho{
+    padding: 2% 0% 0% 15%;
+  }
+  .cabecalho__menu{
+    display: flex;
+    gap: 60px;
+   
+  }
+  .cabecalho__menu__link{
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    color: var(--cor-terciaria) ;
+    text-decoration: none; 
+  }
+
+.titulo-destaque {
+  color: var(--cor-terciaria);/* cor do destaque do titulo*/
+}
+
+.apresentacao {
+  padding: 5% 15%; /*modelo da distancia entre o elemento e as bordas*/
+  display: flex; /* modelo de ajuste para a disposição dos elementos na tela*/
+  align-items: center; /*alinhando os elementos de maneira centralizada*/
+  justify-content: space-between;  /* ajustando os elementos de maneira a ter espaço entre eles*/
+}
+
+.apresentacao__conteudo{
+  width:  615px; /* tamanho do conteudo escrito*/
+  display: flex; /* modelo de ajuste para a disposição dos elementos na tela*/
+  flex-direction:column; /*ajuste tipo coluna*/
+  gap: 15px;/* espaço entre os elementos escritos*/
+}
+
+.apresentacao__conteudo__titulo{
+  font-size: 2.25rem;/* tamanho da fonte do titulo*/
+  font-family: var(--fonte-primaria); /*familia e tipo de fonte*/
+  font-weight: 400;/*peso da fonte*/
+  line-height: 56px; /* espaçamento entre uma linha e outra*/
+}
+
+.apresentacao__conteudo__texto{
+  font-size: 1.3rem;/* tamanho da fonte do texto*/
+  font-family: var(--fonte-secundaria);/*familia e tipo de fonte do texto*/
+  color: var(--cor-secundaria);/*cor do texto*/
+}
+
+.apresentacao__links{
+  display: flex; /*disposição dos elementos de link*/
+  flex-direction: column;/*modo de disposição dos elementos*/
+  justify-content: space-between;/*espaçamento dos elementos link*/
+  align-items: center; /*alinhamento dos links dentro do botão*/
+  gap: 10px;/* espaçamento dos elementos dentro do botão*/
+}
+
+.imagemdionisio{
+  width: 50%; /* dimensionamento do tamanho da foto lateral*/
+  height: 50%;/* dimensionamento do tamanho da foto vertical */
+  
+}
+
+.apresentacao__links__titulo{
+  font-weight: 400; /*peso da fonte*/
+  font-family: var(--fonte-primaria);/*familia e tipo de fonte*/
+  font-size: 1.25rem;/*tamanho da fonte dos links*/
+}
+
+.apresentacao__links__botao{
+    /*background-color: #A4BE7B;cor do fundo do botão*/
+    display: flex; /*organiza o conteudo do botão*/
+    justify-content: center; /* centraliza o conteudo do botão*/
+    gap: 16px; /*espaço entre os icones e as palavras nos botões*/
+    width: 378px;/*tamanho do botão*/
+    text-align: center; /*alinha o texto dos botões*/
+    font-size: 1.62rem; /*tamanho da fonte  botões*/
+    padding: 21.5px 0; /*organiza espaço interno da fonte dos  botões*/
+    text-decoration: none; /*retira o underline do hyperlink*/
+    color: var(--cor-terciaria) ;/*cor da fonte  botões*/
+    font-family: var(--fonte-secundaria);/*fonte da letra botões*/
+    font-weight: 600;/*peso das fontes dos botões*/
+    border:2px solid var(--cor-terciaria) ;/*tamanho da borda botões*/
+    border-radius: 8px; /*raio da borda dos botões*/
+}
+
+.apresentacao__links__botao:hover{
+
+  background-color: var(--cor-quarta) /*cor quando for passado o mouse dentro do botão*/
+}
+
+.rodape{
+ 
+    padding: 1%;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.25rem;
+    position:fixed; 
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+}
+
+@media(max-width: 1200px){
+  .cabecalho{
+    padding: 10%
+  }
+  .cabecalho__menu{
+    justify-content: center;
+  }
+ 
+  .apresentacao{
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+  .apresentacao__conteudo{
+    width: 100%;
+  }
+
+}
