@@ -130,7 +130,8 @@ body { /*configuração inicial do corpo da pagina*/
 
 @media(max-width: 1200px){
   .cabecalho{
-    padding: 10%
+    padding: 5%;
+    width: 100%;
   }
   .cabecalho__menu{
     justify-content: center;
@@ -141,6 +142,9 @@ body { /*configuração inicial do corpo da pagina*/
     padding: 5%;
   }
   .apresentacao__conteudo{
+    width: 100%;
+  }
+ .apresentacao__links__botao{
     width: 100%;
   }
 
