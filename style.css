@@ -118,7 +118,7 @@ body { /*configuração inicial do corpo da pagina*/
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1rem;
     position:fixed; 
     line-height: 30px;
     height: 30px;
